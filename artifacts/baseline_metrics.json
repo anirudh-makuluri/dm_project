@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.0,
+  "macro_f1": 0.0,
+  "weighted_f1": 0.0,
+  "train_size": 9,
+  "test_size": 3,
+  "num_classes": 3
+}

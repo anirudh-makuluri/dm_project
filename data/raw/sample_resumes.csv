@@ -1,0 +1,41 @@
+text,label
+"John Doe
+Email: john.doe@example.com
+Phone: 602-555-0101
+LinkedIn: https://linkedin.com/in/johndoe
+Data Scientist with 4 years of experience building machine learning models in Python, pandas, scikit-learn, and SQL. Built customer churn classifiers, A/B testing dashboards, and forecasting pipelines. Strong in feature engineering, statistics, and model evaluation.",Data Science
+"Jane Smith
+Email: jane.smith@example.com
+Phone: 480-555-0111
+GitHub: https://github.com/janesmith
+Machine Learning Engineer focused on NLP, Python, PyTorch, transformers, experimentation, and model deployment. Created recommendation systems and text classification services with Docker and cloud tooling.",Data Science
+"Alex Johnson
+Portfolio: www.alex-ml.dev
+Analytics professional with experience in Python, SQL, Tableau, regression, clustering, and predictive modeling. Delivered reporting, dashboards, and customer segmentation for product teams.",Data Science
+"Priya Reddy
+Email: priyareddy@example.com
+Data analyst and aspiring data scientist with skills in Python, statistics, SQL, visualization, and machine learning. Worked on fraud detection, classification, and feature analysis in business datasets.",Data Science
+"Maria Garcia
+Email: maria.garcia@example.com
+Human Resources specialist with 5 years in recruiting, onboarding, employee relations, payroll coordination, and compliance. Experienced in applicant tracking systems, interviewing, benefits administration, and policy documentation.",HR
+"Kevin Brown
+Phone: 623-555-0133
+HR coordinator skilled in talent acquisition, screening candidates, scheduling interviews, onboarding paperwork, training support, and maintaining employee records. Familiar with labor policy and compensation processes.",HR
+"Linda Nguyen
+LinkedIn: https://linkedin.com/in/lindahr
+Recruiter with strong experience in sourcing, stakeholder communication, resume screening, interview pipelines, employer branding, and HR analytics. Managed hiring across engineering and operations roles.",HR
+"Samuel Lee
+Email: samlee@example.com
+People operations associate experienced in onboarding, HRIS updates, benefits, employee support, recruiting coordination, and compliance reporting. Strong communication and organizational skills.",HR
+"Ravi Patel
+Email: ravi.patel@example.com
+Software Engineer with Java, Python, APIs, microservices, Git, Docker, and cloud deployment experience. Built backend services, automated tests, and scalable data pipelines for enterprise systems.",Engineering
+"Emily Davis
+GitHub: https://github.com/emilydavis
+Full Stack Developer skilled in JavaScript, React, Node.js, REST APIs, SQL, CI/CD, and unit testing. Developed web platforms, authentication flows, and monitoring dashboards.",Engineering
+"Noah Wilson
+Phone: 520-555-0177
+Backend engineer experienced in Java, Spring Boot, distributed systems, Kubernetes, message queues, and database optimization. Delivered production services with observability and reliability improvements.",Engineering
+"Anika Sharma
+Portfolio: www.anikacodes.dev
+Application developer with experience in Python, Flask, PostgreSQL, software design, testing, and deployment automation. Built internal tools, APIs, and reporting systems for operations teams.",Engineering
