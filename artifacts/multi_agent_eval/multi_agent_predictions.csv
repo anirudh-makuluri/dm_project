@@ -1,0 +1,4 @@
+resume_id,y_true,y_pred,fit_score,scores
+6,HR,HR,29.98,"{""Data Science"": 4.42, ""Engineering"": 4.4, ""HR"": 29.98}"
+10,Engineering,Engineering,21.61,"{""Data Science"": 0.0, ""Engineering"": 21.61, ""HR"": 0.4}"
+2,Data Science,Data Science,14.83,"{""Data Science"": 14.83, ""Engineering"": 13.27, ""HR"": 0.0}"
