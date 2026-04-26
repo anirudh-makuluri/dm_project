@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.6398390342052314,
+  "macro_f1": 0.6114763464263301,
+  "weighted_f1": 0.6372700161206187,
+  "train_size": 1986,
+  "test_size": 497,
+  "num_classes": 24
+}
