@@ -1,0 +1,60 @@
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Extractor LLM call failed: HTTP Error 400: Bad Request
+{
+  "ensemble": {
+    "accuracy": 0.6821,
+    "precision_macro": 0.6794,
+    "recall_macro": 0.6422,
+    "f1_macro": 0.6361,
+    "f1_weighted": 0.6669,
+    "support": 497
+  },
+  "agents_only": {
+    "accuracy": 0.2153,
+    "precision_macro": 0.2564,
+    "recall_macro": 0.1953,
+    "f1_macro": 0.1884,
+    "f1_weighted": 0.2083,
+    "support": 497
+  },
+  "baseline": {
+    "accuracy": 0.6398,
+    "precision_macro": 0.6536,
+    "recall_macro": 0.6064,
+    "f1_macro": 0.6115,
+    "f1_weighted": 0.6373,
+    "support": 497
+  },
+  "ensemble_vs_baseline": {
+    "accuracy_delta": 0.0423,
+    "precision_macro_delta": 0.0258,
+    "recall_macro_delta": 0.0358,
+    "f1_macro_delta": 0.0246,
+    "f1_weighted_delta": 0.0296
+  },
+  "agents_vs_baseline": {
+    "accuracy_delta": -0.4245,
+    "precision_macro_delta": -0.3972,
+    "recall_macro_delta": -0.4111,
+    "f1_macro_delta": -0.4231,
+    "f1_weighted_delta": -0.429
+  },
+  "ensemble_vs_agents": {
+    "accuracy_delta": 0.4668,
+    "precision_macro_delta": 0.423,
+    "recall_macro_delta": 0.4469,
+    "f1_macro_delta": 0.4477,
+    "f1_weighted_delta": 0.4586
+  },
+  "decision_source_breakdown": {
+    "supervised-agent": 114,
+    "supervised+baseline-agree": 383
+  },
+  "providers": {
+    "llm_backend": "openai_compatible",
+    "llm_model": "llama-3.2-3b-instruct",
+    "embedding_backend": "sentence_transformer"
+  }
+}
+Saved artifacts to: artifacts/main_multi_agent_lmstudio

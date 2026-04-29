@@ -1,3 +1,9 @@
+"""End-to-end pipeline driver (milestone 4).
+
+Runs the multi-agent evaluation, then layers downstream mining (clustering
+and association rules) and writes an explainability report bundle.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -18,16 +24,28 @@ def _load_jsonl(path: str | Path) -> pd.DataFrame:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run the milestone 4 analysis pipeline.")
+    parser.add_argument("--train_jsonl", default=None)
     parser.add_argument("--test_jsonl", required=True)
     parser.add_argument("--output_dir", required=True)
     parser.add_argument("--selection_threshold", type=float, default=60.0)
+    parser.add_argument("--baseline_predictions", default="artifacts/main_baseline/baseline_predictions.csv")
+    parser.add_argument("--skill_gold", default="data/annotations/skills_gold.jsonl")
+    parser.add_argument("--disable_supervised", action="store_true")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    train_df = _load_jsonl(args.train_jsonl) if args.train_jsonl else None
     test_df = _load_jsonl(args.test_jsonl)
-    predictions_df, analyses, evaluation_summary = run_multi_agent_evaluation(test_df, selection_threshold=args.selection_threshold)
+    predictions_df, analyses, evaluation_summary = run_multi_agent_evaluation(
+        test_df,
+        selection_threshold=args.selection_threshold,
+        baseline_predictions_path=args.baseline_predictions,
+        train_df=train_df,
+        skill_gold_path=args.skill_gold,
+        enable_supervised=not args.disable_supervised,
+    )
 
     skill_lists = [[match.canonical_skill for match in analysis.normalized_skills] for analysis in analyses]
     clustered, cluster_summaries = cluster_candidates(skill_lists)
@@ -63,6 +81,15 @@ def main() -> None:
         ),
         encoding="utf-8",
     )
+
+    if evaluation_summary.get("ranking") is not None:
+        (output_dir / "ranking_metrics.json").write_text(
+            json.dumps(evaluation_summary["ranking"], indent=2), encoding="utf-8"
+        )
+    if evaluation_summary.get("skill_extraction") is not None:
+        (output_dir / "skill_extraction_metrics.json").write_text(
+            json.dumps(evaluation_summary["skill_extraction"], indent=2), encoding="utf-8"
+        )
 
     print(f"Saved pipeline summary to: {summary_path}")
     print(f"Saved report to: {report_path}")

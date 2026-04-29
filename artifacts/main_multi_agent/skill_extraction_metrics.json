@@ -1,0 +1,1871 @@
+{
+  "canonical_macro": {
+    "precision": 0.9186,
+    "recall": 0.1276,
+    "f1": 0.2177,
+    "support": 96
+  },
+  "canonical_micro": {
+    "precision": 0.9282,
+    "recall": 0.1215,
+    "f1": 0.2148,
+    "support": 1490
+  },
+  "per_resume": {
+    "724": {
+      "precision": 1.0,
+      "recall": 0.1667,
+      "f1": 0.2857,
+      "tp": 3,
+      "fp": 0,
+      "fn": 15
+    },
+    "48": {
+      "precision": 0.6667,
+      "recall": 0.1333,
+      "f1": 0.2222,
+      "tp": 2,
+      "fp": 1,
+      "fn": 13
+    },
+    "1325": {
+      "precision": 1.0,
+      "recall": 0.0625,
+      "f1": 0.1176,
+      "tp": 1,
+      "fp": 0,
+      "fn": 15
+    },
+    "1926": {
+      "precision": 1.0,
+      "recall": 0.2727,
+      "f1": 0.4286,
+      "tp": 3,
+      "fp": 0,
+      "fn": 8
+    },
+    "1321": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "tp": 2,
+      "fp": 0,
+      "fn": 14
+    },
+    "1477": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "tp": 3,
+      "fp": 0,
+      "fn": 21
+    },
+    "1581": {
+      "precision": 1.0,
+      "recall": 0.0667,
+      "f1": 0.125,
+      "tp": 1,
+      "fp": 0,
+      "fn": 14
+    },
+    "1531": {
+      "precision": 1.0,
+      "recall": 0.0667,
+      "f1": 0.125,
+      "tp": 1,
+      "fp": 0,
+      "fn": 14
+    },
+    "1714": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 3,
+      "fp": 0,
+      "fn": 24
+    },
+    "813": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    },
+    "1250": {
+      "precision": 1.0,
+      "recall": 0.05,
+      "f1": 0.0952,
+      "tp": 1,
+      "fp": 0,
+      "fn": 19
+    },
+    "882": {
+      "precision": 1.0,
+      "recall": 0.087,
+      "f1": 0.16,
+      "tp": 2,
+      "fp": 0,
+      "fn": 21
+    },
+    "2154": {
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25,
+      "tp": 2,
+      "fp": 0,
+      "fn": 12
+    },
+    "1965": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 16
+    },
+    "1008": {
+      "precision": 1.0,
+      "recall": 0.0588,
+      "f1": 0.1111,
+      "tp": 1,
+      "fp": 0,
+      "fn": 16
+    },
+    "1633": {
+      "precision": 1.0,
+      "recall": 0.0556,
+      "f1": 0.1053,
+      "tp": 1,
+      "fp": 0,
+      "fn": 17
+    },
+    "613": {
+      "precision": 1.0,
+      "recall": 0.0667,
+      "f1": 0.125,
+      "tp": 1,
+      "fp": 0,
+      "fn": 14
+    },
+    "202": {
+      "precision": 1.0,
+      "recall": 0.0952,
+      "f1": 0.1739,
+      "tp": 2,
+      "fp": 0,
+      "fn": 19
+    },
+    "27": {
+      "precision": 0.5,
+      "recall": 0.0588,
+      "f1": 0.1053,
+      "tp": 1,
+      "fp": 1,
+      "fn": 16
+    },
+    "212": {
+      "precision": 1.0,
+      "recall": 0.0833,
+      "f1": 0.1538,
+      "tp": 1,
+      "fp": 0,
+      "fn": 11
+    },
+    "1706": {
+      "precision": 1.0,
+      "recall": 0.0833,
+      "f1": 0.1538,
+      "tp": 1,
+      "fp": 0,
+      "fn": 11
+    },
+    "1787": {
+      "precision": 1.0,
+      "recall": 0.1333,
+      "f1": 0.2353,
+      "tp": 2,
+      "fp": 0,
+      "fn": 13
+    },
+    "435": {
+      "precision": 1.0,
+      "recall": 0.1538,
+      "f1": 0.2667,
+      "tp": 2,
+      "fp": 0,
+      "fn": 11
+    },
+    "372": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3
+    },
+    "1625": {
+      "precision": 1.0,
+      "recall": 0.0909,
+      "f1": 0.1667,
+      "tp": 2,
+      "fp": 0,
+      "fn": 20
+    },
+    "1122": {
+      "precision": 1.0,
+      "recall": 0.0588,
+      "f1": 0.1111,
+      "tp": 1,
+      "fp": 0,
+      "fn": 16
+    },
+    "687": {
+      "precision": 1.0,
+      "recall": 0.0909,
+      "f1": 0.1667,
+      "tp": 1,
+      "fp": 0,
+      "fn": 10
+    },
+    "1975": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333,
+      "tp": 3,
+      "fp": 0,
+      "fn": 12
+    },
+    "2042": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "tp": 1,
+      "fp": 0,
+      "fn": 7
+    },
+    "1674": {
+      "precision": 1.0,
+      "recall": 0.1053,
+      "f1": 0.1905,
+      "tp": 2,
+      "fp": 0,
+      "fn": 17
+    },
+    "1269": {
+      "precision": 1.0,
+      "recall": 0.0909,
+      "f1": 0.1667,
+      "tp": 1,
+      "fp": 0,
+      "fn": 10
+    },
+    "327": {
+      "precision": 1.0,
+      "recall": 0.1333,
+      "f1": 0.2353,
+      "tp": 2,
+      "fp": 0,
+      "fn": 13
+    },
+    "92": {
+      "precision": 0.6667,
+      "recall": 0.125,
+      "f1": 0.2105,
+      "tp": 2,
+      "fp": 1,
+      "fn": 14
+    },
+    "2186": {
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1": 0.3077,
+      "tp": 4,
+      "fp": 0,
+      "fn": 18
+    },
+    "330": {
+      "precision": 1.0,
+      "recall": 0.0625,
+      "f1": 0.1176,
+      "tp": 1,
+      "fp": 0,
+      "fn": 15
+    },
+    "1030": {
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1": 0.3077,
+      "tp": 2,
+      "fp": 0,
+      "fn": 9
+    },
+    "253": {
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "tp": 2,
+      "fp": 0,
+      "fn": 18
+    },
+    "1871": {
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "tp": 1,
+      "fp": 0,
+      "fn": 9
+    },
+    "1860": {
+      "precision": 1.0,
+      "recall": 0.0833,
+      "f1": 0.1538,
+      "tp": 1,
+      "fp": 0,
+      "fn": 11
+    },
+    "937": {
+      "precision": 1.0,
+      "recall": 0.1538,
+      "f1": 0.2667,
+      "tp": 2,
+      "fp": 0,
+      "fn": 11
+    },
+    "1934": {
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5,
+      "tp": 3,
+      "fp": 0,
+      "fn": 6
+    },
+    "2278": {
+      "precision": 1.0,
+      "recall": 0.0909,
+      "f1": 0.1667,
+      "tp": 1,
+      "fp": 0,
+      "fn": 10
+    },
+    "1606": {
+      "precision": 0.5,
+      "recall": 0.0667,
+      "f1": 0.1176,
+      "tp": 1,
+      "fp": 1,
+      "fn": 14
+    },
+    "1799": {
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25,
+      "tp": 4,
+      "fp": 0,
+      "fn": 24
+    },
+    "975": {
+      "precision": 1.0,
+      "recall": 0.0526,
+      "f1": 0.1,
+      "tp": 1,
+      "fp": 0,
+      "fn": 18
+    },
+    "1579": {
+      "precision": 0.6667,
+      "recall": 0.2,
+      "f1": 0.3077,
+      "tp": 2,
+      "fp": 1,
+      "fn": 8
+    },
+    "654": {
+      "precision": 1.0,
+      "recall": 0.0556,
+      "f1": 0.1053,
+      "tp": 1,
+      "fp": 0,
+      "fn": 17
+    },
+    "331": {
+      "precision": 1.0,
+      "recall": 0.1282,
+      "f1": 0.2273,
+      "tp": 5,
+      "fp": 0,
+      "fn": 34
+    },
+    "1236": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "tp": 1,
+      "fp": 0,
+      "fn": 7
+    },
+    "2441": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "tp": 2,
+      "fp": 0,
+      "fn": 6
+    },
+    "984": {
+      "precision": 0.5,
+      "recall": 0.0667,
+      "f1": 0.1176,
+      "tp": 1,
+      "fp": 1,
+      "fn": 14
+    },
+    "862": {
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25,
+      "tp": 2,
+      "fp": 0,
+      "fn": 12
+    },
+    "993": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 16
+    },
+    "2328": {
+      "precision": 1.0,
+      "recall": 0.2222,
+      "f1": 0.3636,
+      "tp": 2,
+      "fp": 0,
+      "fn": 7
+    },
+    "697": {
+      "precision": 0.75,
+      "recall": 0.15,
+      "f1": 0.25,
+      "tp": 3,
+      "fp": 1,
+      "fn": 17
+    },
+    "658": {
+      "precision": 1.0,
+      "recall": 0.0556,
+      "f1": 0.1053,
+      "tp": 1,
+      "fp": 0,
+      "fn": 17
+    },
+    "1442": {
+      "precision": 0.6,
+      "recall": 0.3333,
+      "f1": 0.4286,
+      "tp": 3,
+      "fp": 2,
+      "fn": 6
+    },
+    "917": {
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1": 0.3077,
+      "tp": 2,
+      "fp": 0,
+      "fn": 9
+    },
+    "141": {
+      "precision": 1.0,
+      "recall": 0.1765,
+      "f1": 0.3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 14
+    },
+    "2139": {
+      "precision": 1.0,
+      "recall": 0.1579,
+      "f1": 0.2727,
+      "tp": 3,
+      "fp": 0,
+      "fn": 16
+    },
+    "1430": {
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1": 0.3077,
+      "tp": 2,
+      "fp": 0,
+      "fn": 9
+    },
+    "972": {
+      "precision": 1.0,
+      "recall": 0.0769,
+      "f1": 0.1429,
+      "tp": 1,
+      "fp": 0,
+      "fn": 12
+    },
+    "503": {
+      "precision": 0.6667,
+      "recall": 0.1053,
+      "f1": 0.1818,
+      "tp": 2,
+      "fp": 1,
+      "fn": 17
+    },
+    "439": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333,
+      "tp": 2,
+      "fp": 0,
+      "fn": 8
+    },
+    "1446": {
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6
+    },
+    "1324": {
+      "precision": 1.0,
+      "recall": 0.1176,
+      "f1": 0.2105,
+      "tp": 2,
+      "fp": 0,
+      "fn": 15
+    },
+    "1894": {
+      "precision": 0.6667,
+      "recall": 0.0833,
+      "f1": 0.1481,
+      "tp": 2,
+      "fp": 1,
+      "fn": 22
+    },
+    "96": {
+      "precision": 0.5,
+      "recall": 0.0625,
+      "f1": 0.1111,
+      "tp": 1,
+      "fp": 1,
+      "fn": 15
+    },
+    "1057": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    "2233": {
+      "precision": 1.0,
+      "recall": 0.0556,
+      "f1": 0.1053,
+      "tp": 1,
+      "fp": 0,
+      "fn": 17
+    },
+    "2279": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 1,
+      "fp": 0,
+      "fn": 8
+    },
+    "1339": {
+      "precision": 1.0,
+      "recall": 0.1852,
+      "f1": 0.3125,
+      "tp": 5,
+      "fp": 0,
+      "fn": 22
+    },
+    "1216": {
+      "precision": 0.75,
+      "recall": 0.1765,
+      "f1": 0.2857,
+      "tp": 3,
+      "fp": 1,
+      "fn": 14
+    },
+    "445": {
+      "precision": 1.0,
+      "recall": 0.1176,
+      "f1": 0.2105,
+      "tp": 2,
+      "fp": 0,
+      "fn": 15
+    },
+    "770": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 16
+    },
+    "586": {
+      "precision": 1.0,
+      "recall": 0.0769,
+      "f1": 0.1429,
+      "tp": 1,
+      "fp": 0,
+      "fn": 12
+    },
+    "2195": {
+      "precision": 1.0,
+      "recall": 0.1,
+      "f1": 0.1818,
+      "tp": 1,
+      "fp": 0,
+      "fn": 9
+    },
+    "2144": {
+      "precision": 1.0,
+      "recall": 0.0556,
+      "f1": 0.1053,
+      "tp": 1,
+      "fp": 0,
+      "fn": 17
+    },
+    "1251": {
+      "precision": 1.0,
+      "recall": 0.1143,
+      "f1": 0.2051,
+      "tp": 4,
+      "fp": 0,
+      "fn": 31
+    },
+    "1000": {
+      "precision": 1.0,
+      "recall": 0.1176,
+      "f1": 0.2105,
+      "tp": 2,
+      "fp": 0,
+      "fn": 15
+    },
+    "2376": {
+      "precision": 1.0,
+      "recall": 0.1053,
+      "f1": 0.1905,
+      "tp": 2,
+      "fp": 0,
+      "fn": 17
+    },
+    "475": {
+      "precision": 1.0,
+      "recall": 0.2308,
+      "f1": 0.375,
+      "tp": 3,
+      "fp": 0,
+      "fn": 10
+    },
+    "928": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3
+    },
+    "1114": {
+      "precision": 0.75,
+      "recall": 0.3333,
+      "f1": 0.4615,
+      "tp": 3,
+      "fp": 1,
+      "fn": 6
+    },
+    "2288": {
+      "precision": 1.0,
+      "recall": 0.2222,
+      "f1": 0.3636,
+      "tp": 2,
+      "fp": 0,
+      "fn": 7
+    },
+    "1868": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 3,
+      "fp": 0,
+      "fn": 24
+    },
+    "2471": {
+      "precision": 1.0,
+      "recall": 0.2308,
+      "f1": 0.375,
+      "tp": 3,
+      "fp": 0,
+      "fn": 10
+    },
+    "342": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 1,
+      "fp": 0,
+      "fn": 8
+    },
+    "116": {
+      "precision": 1.0,
+      "recall": 0.1765,
+      "f1": 0.3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 14
+    },
+    "411": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    "1140": {
+      "precision": 1.0,
+      "recall": 0.1538,
+      "f1": 0.2667,
+      "tp": 2,
+      "fp": 0,
+      "fn": 11
+    },
+    "2395": {
+      "precision": 1.0,
+      "recall": 0.24,
+      "f1": 0.3871,
+      "tp": 6,
+      "fp": 0,
+      "fn": 19
+    },
+    "855": {
+      "precision": 1.0,
+      "recall": 0.0714,
+      "f1": 0.1333,
+      "tp": 1,
+      "fp": 0,
+      "fn": 13
+    },
+    "1458": {
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6
+    },
+    "914": {
+      "precision": 1.0,
+      "recall": 0.0588,
+      "f1": 0.1111,
+      "tp": 1,
+      "fp": 0,
+      "fn": 16
+    },
+    "2147": {
+      "precision": 1.0,
+      "recall": 0.1364,
+      "f1": 0.24,
+      "tp": 3,
+      "fp": 0,
+      "fn": 19
+    }
+  },
+  "per_skill": {
+    "communication": {
+      "precision": 1.0,
+      "recall": 0.8947,
+      "f1": 0.9444,
+      "tp": 51,
+      "fp": 0,
+      "fn": 6
+    },
+    "leadership": {
+      "precision": 1.0,
+      "recall": 0.6714,
+      "f1": 0.8034,
+      "tp": 47,
+      "fp": 0,
+      "fn": 23
+    },
+    "excel": {
+      "precision": 1.0,
+      "recall": 0.6364,
+      "f1": 0.7778,
+      "tp": 42,
+      "fp": 0,
+      "fn": 24
+    },
+    "patient care": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "medical records": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "data pipelines": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 15
+    },
+    "quality control": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "problem solving": {
+      "precision": 1.0,
+      "recall": 0.0357,
+      "f1": 0.069,
+      "tp": 1,
+      "fp": 0,
+      "fn": 27
+    },
+    "customer service": {
+      "precision": 1.0,
+      "recall": 0.0294,
+      "f1": 0.0571,
+      "tp": 1,
+      "fp": 0,
+      "fn": 33
+    },
+    "go": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 79
+    },
+    "typescript": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 96
+    },
+    "data analysis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    "compliance": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 32
+    },
+    "r": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 96
+    },
+    "sap": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 56
+    },
+    "documentation": {
+      "precision": 1.0,
+      "recall": 0.0385,
+      "f1": 0.0741,
+      "tp": 1,
+      "fp": 0,
+      "fn": 25
+    },
+    "accounting": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 17
+    },
+    "presentation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 24
+    },
+    "onboarding": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "hr analytics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 11,
+      "fn": 0
+    },
+    "payroll": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 18
+    },
+    "employee relations": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    },
+    "llm": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "research": {
+      "precision": 1.0,
+      "recall": 0.0256,
+      "f1": 0.05,
+      "tp": 1,
+      "fp": 0,
+      "fn": 38
+    },
+    "benefits administration": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 20
+    },
+    "model evaluation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 21
+    },
+    "observability": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 21
+    },
+    "scala": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 11
+    },
+    "project management": {
+      "precision": 1.0,
+      "recall": 0.0455,
+      "f1": 0.087,
+      "tp": 1,
+      "fp": 0,
+      "fn": 21
+    },
+    "rag": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 43
+    },
+    "contract drafting": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14
+    },
+    "applicant tracking systems": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8
+    },
+    "autocad": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+    },
+    "adobe photoshop": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 9,
+      "fp": 0,
+      "fn": 0
+    },
+    "adobe illustrator": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    },
+    "git": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 14
+    },
+    "testing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 23
+    },
+    "machine learning": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 19
+    },
+    "aws": {
+      "precision": 1.0,
+      "recall": 0.1538,
+      "f1": 0.2667,
+      "tp": 2,
+      "fp": 0,
+      "fn": 11
+    },
+    "budgeting": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9
+    },
+    "teaching": {
+      "precision": 1.0,
+      "recall": 0.05,
+      "f1": 0.0952,
+      "tp": 1,
+      "fp": 0,
+      "fn": 19
+    },
+    "time series": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12
+    },
+    "negotiation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 11
+    },
+    "rust": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9
+    },
+    "financial analysis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "auditing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "mentoring": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 23
+    },
+    "sales": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 47
+    },
+    "teamwork": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12
+    },
+    "tensorflow": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 24
+    },
+    "oracle": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9
+    },
+    "supply chain": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8
+    },
+    "mssql": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "spring boot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    "dashboarding": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "graphic design": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "marketing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 30
+    },
+    "seo": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "html": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9
+    },
+    "social media": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 13
+    },
+    "brand management": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "statistics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8
+    },
+    "sem": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 28
+    },
+    "crm": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "recruiting": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 19
+    },
+    "docker": {
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2
+    },
+    "feature engineering": {
+      "precision": 1.0,
+      "recall": 0.1429,
+      "f1": 0.25,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6
+    },
+    "css": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8
+    },
+    "bash": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "food safety": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 2
+    },
+    "performance management": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 8
+    },
+    "c++": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "system design": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "agile": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "pharmacy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "quickbooks": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "computer vision": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "java": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "php": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "sql": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "c#": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "legal research": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "python": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "javascript": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "mongodb": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "ci/cd": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    ".net": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "tableau": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "azure": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "power bi": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "data mining": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "cloud": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "video editing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "classification": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "redis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "training and development": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "apache spark": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "inventory management": {
+      "precision": 0.5,
+      "recall": 0.3333,
+      "f1": 0.4,
+      "tp": 1,
+      "fp": 1,
+      "fn": 2
+    },
+    "adobe creative suite": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    "matplotlib": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "pandas": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "mysql": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "numpy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "regression": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "model deployment": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "apis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "kafka": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "angular": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "taxation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "nlp": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    "postgresql": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "per_category": {
+    "HEALTHCARE": {
+      "precision": 0.9,
+      "recall": 0.1343,
+      "f1": 0.2338,
+      "tp": 9,
+      "fp": 1,
+      "fn": 58
+    },
+    "HR": {
+      "precision": 0.6,
+      "recall": 0.0938,
+      "f1": 0.1622,
+      "tp": 6,
+      "fp": 4,
+      "fn": 58
+    },
+    "AUTOMOBILE": {
+      "precision": 1.0,
+      "recall": 0.1316,
+      "f1": 0.2326,
+      "tp": 10,
+      "fp": 0,
+      "fn": 66
+    },
+    "CONSTRUCTION": {
+      "precision": 1.0,
+      "recall": 0.2075,
+      "f1": 0.3438,
+      "tp": 11,
+      "fp": 0,
+      "fn": 42
+    },
+    "FINANCE": {
+      "precision": 0.875,
+      "recall": 0.1094,
+      "f1": 0.1944,
+      "tp": 7,
+      "fp": 1,
+      "fn": 57
+    },
+    "ENGINEERING": {
+      "precision": 1.0,
+      "recall": 0.122,
+      "f1": 0.2174,
+      "tp": 10,
+      "fp": 0,
+      "fn": 72
+    },
+    "FITNESS": {
+      "precision": 1.0,
+      "recall": 0.0862,
+      "f1": 0.1587,
+      "tp": 5,
+      "fp": 0,
+      "fn": 53
+    },
+    "DIGITAL-MEDIA": {
+      "precision": 1.0,
+      "recall": 0.0946,
+      "f1": 0.1728,
+      "tp": 7,
+      "fp": 0,
+      "fn": 67
+    },
+    "BANKING": {
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "tp": 8,
+      "fp": 0,
+      "fn": 56
+    },
+    "SALES": {
+      "precision": 1.0,
+      "recall": 0.0909,
+      "f1": 0.1667,
+      "tp": 5,
+      "fp": 0,
+      "fn": 50
+    },
+    "APPAREL": {
+      "precision": 0.8571,
+      "recall": 0.0811,
+      "f1": 0.1481,
+      "tp": 6,
+      "fp": 1,
+      "fn": 68
+    },
+    "BUSINESS-DEVELOPMENT": {
+      "precision": 1.0,
+      "recall": 0.0625,
+      "f1": 0.1176,
+      "tp": 4,
+      "fp": 0,
+      "fn": 60
+    },
+    "DESIGNER": {
+      "precision": 1.0,
+      "recall": 0.1343,
+      "f1": 0.2368,
+      "tp": 9,
+      "fp": 0,
+      "fn": 58
+    },
+    "TEACHER": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 4,
+      "fp": 0,
+      "fn": 32
+    },
+    "CONSULTANT": {
+      "precision": 0.8182,
+      "recall": 0.1607,
+      "f1": 0.2687,
+      "tp": 9,
+      "fp": 2,
+      "fn": 47
+    },
+    "PUBLIC-RELATIONS": {
+      "precision": 1.0,
+      "recall": 0.1194,
+      "f1": 0.2133,
+      "tp": 8,
+      "fp": 0,
+      "fn": 59
+    },
+    "INFORMATION-TECHNOLOGY": {
+      "precision": 1.0,
+      "recall": 0.1111,
+      "f1": 0.2,
+      "tp": 10,
+      "fp": 0,
+      "fn": 80
+    },
+    "ACCOUNTANT": {
+      "precision": 0.875,
+      "recall": 0.0959,
+      "f1": 0.1728,
+      "tp": 7,
+      "fp": 1,
+      "fn": 66
+    },
+    "AGRICULTURE": {
+      "precision": 1.0,
+      "recall": 0.1333,
+      "f1": 0.2353,
+      "tp": 6,
+      "fp": 0,
+      "fn": 39
+    },
+    "ARTS": {
+      "precision": 1.0,
+      "recall": 0.1579,
+      "f1": 0.2727,
+      "tp": 6,
+      "fp": 0,
+      "fn": 32
+    },
+    "BPO": {
+      "precision": 0.8333,
+      "recall": 0.0769,
+      "f1": 0.1408,
+      "tp": 5,
+      "fp": 1,
+      "fn": 60
+    },
+    "AVIATION": {
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333,
+      "tp": 13,
+      "fp": 0,
+      "fn": 52
+    },
+    "CHEF": {
+      "precision": 0.7778,
+      "recall": 0.2059,
+      "f1": 0.3256,
+      "tp": 7,
+      "fp": 2,
+      "fn": 27
+    },
+    "ADVOCATE": {
+      "precision": 0.9,
+      "recall": 0.1525,
+      "f1": 0.2609,
+      "tp": 9,
+      "fp": 1,
+      "fn": 50
+    }
+  },
+  "n_resumes": 96,
+  "n_gold_skills": 1490,
+  "n_pred_skills": 195
+}

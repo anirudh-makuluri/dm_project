@@ -1,0 +1,23 @@
+{
+  "n": 497,
+  "grounded_in_matched_pct": 0.66,
+  "grounded_in_missing_pct": 1.0,
+  "grounded_in_both_pct": 0.66,
+  "specific_pct": 1.0,
+  "calibrated_pct": 0.4105,
+  "identity_clean_pct": 1.0,
+  "avg_word_count": 41.9,
+  "strengths_grounded_pct": 0.5466,
+  "gaps_grounded_pct": 0.9958,
+  "tone_distribution": {
+    "advance": 58,
+    "consider": 285,
+    "reject": 100,
+    "unclassified": 54
+  },
+  "fit_band_distribution": {
+    "advance": 0,
+    "consider": 130,
+    "reject": 367
+  }
+}

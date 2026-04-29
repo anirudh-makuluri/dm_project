@@ -1,0 +1,528 @@
+{
+  "ACCOUNTANT": {
+    "label": "ACCOUNTANT",
+    "description": "Accountant role typically involves accountant, accounting, ledger, general ledger, reconciliations. Accounting and audit workflows with spreadsheets, financial controls, reporting, and compliance.",
+    "required_skills": [
+      "accounting",
+      "excel",
+      "payroll",
+      "leadership",
+      "sales",
+      "compliance"
+    ],
+    "preferred_skills": [
+      "financial analysis",
+      "documentation",
+      "quickbooks",
+      "budgeting",
+      "communication",
+      "sap",
+      "auditing",
+      "contract drafting"
+    ]
+  },
+  "ADVOCATE": {
+    "label": "ADVOCATE",
+    "description": "Advocate role typically involves advocate, care, patient, patients, child. Legal advocacy and advisory services with client communication and compliance-intensive case management.",
+    "required_skills": [
+      "leadership",
+      "customer service",
+      "communication",
+      "sales",
+      "excel",
+      "problem solving"
+    ],
+    "preferred_skills": [
+      "research",
+      "documentation",
+      "presentation",
+      "compliance",
+      "observability",
+      "marketing",
+      "testing",
+      "benefits administration"
+    ]
+  },
+  "AGRICULTURE": {
+    "label": "AGRICULTURE",
+    "description": "Agriculture role typically involves agriculture, agricultural, extension, research assistant, soil. Agriculture domain operations with planning, monitoring, reporting, and quality/compliance controls.",
+    "required_skills": [
+      "leadership",
+      "research",
+      "communication",
+      "excel",
+      "presentation",
+      "observability"
+    ],
+    "preferred_skills": [
+      "marketing",
+      "testing",
+      "sales",
+      "customer service",
+      "compliance",
+      "documentation",
+      "teaching",
+      "project management"
+    ]
+  },
+  "APPAREL": {
+    "label": "APPAREL",
+    "description": "Apparel role typically involves apparel, merchandising, store, merchandise, fashion. Apparel operations across design coordination, production planning, vendor alignment, and quality controls.",
+    "required_skills": [
+      "sales",
+      "leadership",
+      "customer service",
+      "communication",
+      "excel",
+      "marketing"
+    ],
+    "preferred_skills": [
+      "recruiting",
+      "presentation",
+      "compliance",
+      "research",
+      "payroll",
+      "problem solving",
+      "observability",
+      "documentation"
+    ]
+  },
+  "ARTS": {
+    "label": "ARTS",
+    "description": "Arts role typically involves arts, students, teacher, student, arts teacher. Creative arts delivery with strong communication, execution planning, and stakeholder collaboration.",
+    "required_skills": [
+      "leadership",
+      "communication",
+      "sales",
+      "customer service",
+      "teaching",
+      "marketing"
+    ],
+    "preferred_skills": [
+      "presentation",
+      "excel",
+      "research",
+      "problem solving",
+      "testing",
+      "mentoring",
+      "documentation",
+      "social media"
+    ]
+  },
+  "AUTOMOBILE": {
+    "label": "AUTOMOBILE",
+    "description": "Automobile role typically involves automobile, claims, customer service, auto, fraud. Automobile domain engineering/operations with testing, quality, production execution, and process controls.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "customer service",
+      "communication",
+      "excel",
+      "compliance"
+    ],
+    "preferred_skills": [
+      "problem solving",
+      "testing",
+      "research",
+      "contract drafting",
+      "project management",
+      "documentation",
+      "mentoring",
+      "benefits administration"
+    ]
+  },
+  "AVIATION": {
+    "label": "AVIATION",
+    "description": "Aviation role typically involves aviation, aircraft, flight, navy, maintenance. Aviation operations requiring safety-first compliance, coordination, and high-reliability execution.",
+    "required_skills": [
+      "leadership",
+      "communication",
+      "excel",
+      "testing",
+      "customer service",
+      "compliance"
+    ],
+    "preferred_skills": [
+      "supply chain",
+      "documentation",
+      "sales",
+      "research",
+      "problem solving",
+      "accounting",
+      "quality control",
+      "teaching"
+    ]
+  },
+  "BANKING": {
+    "label": "BANKING",
+    "description": "Banking role typically involves banking, loan, bank, financial, mortgage. Banking processes with regulatory compliance, financial reporting, reconciliation, and customer operations.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "compliance",
+      "excel",
+      "customer service",
+      "communication"
+    ],
+    "preferred_skills": [
+      "marketing",
+      "documentation",
+      "research",
+      "accounting",
+      "presentation",
+      "observability",
+      "mentoring",
+      "project management"
+    ]
+  },
+  "BPO": {
+    "label": "BPO",
+    "description": "Bpo role typically involves bpo, india, agents, like, escalations. Business process outsourcing operations with service quality, communication, and process efficiency.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "documentation",
+      "observability",
+      "problem solving",
+      "excel"
+    ],
+    "preferred_skills": [
+      "customer service",
+      "marketing",
+      "mentoring",
+      "communication",
+      "sap",
+      "recruiting",
+      "research",
+      "model evaluation"
+    ]
+  },
+  "BUSINESS-DEVELOPMENT": {
+    "label": "BUSINESS-DEVELOPMENT",
+    "description": "Business Development role typically involves business development, sales, marketing, development manager, territory. Business development focused on pipeline growth, stakeholder engagement, and conversion operations.",
+    "required_skills": [
+      "sales",
+      "leadership",
+      "marketing",
+      "presentation",
+      "customer service",
+      "communication"
+    ],
+    "preferred_skills": [
+      "budgeting",
+      "contract drafting",
+      "excel",
+      "research",
+      "crm",
+      "project management",
+      "time series",
+      "problem solving"
+    ]
+  },
+  "CHEF": {
+    "label": "CHEF",
+    "description": "Chef role typically involves chef, food, kitchen, culinary, menu. Culinary operations with menu execution, hygiene compliance, planning, and team coordination.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "presentation",
+      "customer service",
+      "recruiting",
+      "communication"
+    ],
+    "preferred_skills": [
+      "excel",
+      "marketing",
+      "food safety",
+      "inventory management",
+      "compliance",
+      "mentoring",
+      "budgeting",
+      "problem solving"
+    ]
+  },
+  "CONSTRUCTION": {
+    "label": "CONSTRUCTION",
+    "description": "Construction role typically involves construction, construction manager, site, contractors, safety. Construction project lifecycle management with planning, site execution, quality, and compliance.",
+    "required_skills": [
+      "leadership",
+      "communication",
+      "compliance",
+      "project management",
+      "excel",
+      "contract drafting"
+    ],
+    "preferred_skills": [
+      "testing",
+      "budgeting",
+      "construction management",
+      "sales",
+      "customer service",
+      "documentation",
+      "quality control",
+      "marketing"
+    ]
+  },
+  "CONSULTANT": {
+    "label": "CONSULTANT",
+    "description": "Consultant role typically involves consultant, experience consultant, sql, consultant summary, consulting. Consulting delivery with diagnostics, recommendations, stakeholder alignment, and execution tracking.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "communication",
+      "excel",
+      "testing",
+      "documentation"
+    ],
+    "preferred_skills": [
+      "presentation",
+      "project management",
+      "marketing",
+      "research",
+      "customer service",
+      "compliance",
+      "sql",
+      "observability"
+    ]
+  },
+  "DESIGNER": {
+    "label": "DESIGNER",
+    "description": "Designer role typically involves designer, design, graphic, graphic designer, designer summary. Design role focused on visual communication, creative iteration, and collaborative project execution.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "communication",
+      "presentation",
+      "adobe photoshop",
+      "excel"
+    ],
+    "preferred_skills": [
+      "testing",
+      "adobe illustrator",
+      "customer service",
+      "research",
+      "marketing",
+      "autocad",
+      "project management",
+      "problem solving"
+    ]
+  },
+  "DIGITAL-MEDIA": {
+    "label": "DIGITAL-MEDIA",
+    "description": "Digital Media role typically involves digital, media, social media, marketing, content. Digital media role with content strategy, campaign execution, analytics, and channel operations.",
+    "required_skills": [
+      "marketing",
+      "leadership",
+      "sales",
+      "communication",
+      "social media",
+      "research"
+    ],
+    "preferred_skills": [
+      "excel",
+      "presentation",
+      "project management",
+      "adobe photoshop",
+      "model evaluation",
+      "seo",
+      "testing",
+      "customer service"
+    ]
+  },
+  "ENGINEERING": {
+    "label": "ENGINEERING",
+    "description": "Engineering role typically involves engineering, engineer, mechanical, manufacturing, electrical. Software engineering, APIs, cloud deployment, containers, testing, and scalable backend systems.",
+    "required_skills": [
+      "leadership",
+      "testing",
+      "communication",
+      "documentation",
+      "project management",
+      "excel"
+    ],
+    "preferred_skills": [
+      "autocad",
+      "compliance",
+      "research",
+      "problem solving",
+      "sales",
+      "observability",
+      "r",
+      "agile"
+    ]
+  },
+  "FINANCE": {
+    "label": "FINANCE",
+    "description": "Finance role typically involves finance, accounting, financial, finance manager, reporting. Finance role focused on analysis, controls, reporting, and compliance-aware planning.",
+    "required_skills": [
+      "accounting",
+      "leadership",
+      "sales",
+      "budgeting",
+      "excel",
+      "financial analysis"
+    ],
+    "preferred_skills": [
+      "communication",
+      "compliance",
+      "time series",
+      "payroll",
+      "marketing",
+      "contract drafting",
+      "research",
+      "documentation"
+    ]
+  },
+  "FITNESS": {
+    "label": "FITNESS",
+    "description": "Fitness role typically involves fitness, exercise, fitness instructor, instructor, wellness. Fitness and wellness services requiring client communication, planning, and quality outcomes.",
+    "required_skills": [
+      "leadership",
+      "sales",
+      "communication",
+      "customer service",
+      "marketing"
+    ],
+    "preferred_skills": [
+      "excel",
+      "teaching",
+      "problem solving",
+      "research",
+      "compliance",
+      "presentation",
+      "payroll",
+      "recruiting"
+    ]
+  },
+  "HEALTHCARE": {
+    "label": "HEALTHCARE",
+    "description": "Healthcare role typically involves healthcare, patient, medical, care, patients. Healthcare operations and service delivery with strict compliance and multidisciplinary coordination.",
+    "required_skills": [
+      "leadership",
+      "communication",
+      "compliance",
+      "customer service",
+      "sales",
+      "excel"
+    ],
+    "preferred_skills": [
+      "testing",
+      "marketing",
+      "problem solving",
+      "accounting",
+      "documentation",
+      "research",
+      "medical records",
+      "presentation"
+    ]
+  },
+  "HR": {
+    "label": "HR",
+    "description": "Hr role typically involves hr, human, human resources, employee, benefits. Recruiting, onboarding, employee relations, compliance, benefits, payroll, and applicant tracking systems.",
+    "required_skills": [
+      "leadership",
+      "recruiting",
+      "payroll",
+      "benefits administration",
+      "excel",
+      "communication"
+    ],
+    "preferred_skills": [
+      "employee relations",
+      "compliance",
+      "performance management",
+      "sales",
+      "customer service",
+      "training and development",
+      "documentation",
+      "research"
+    ]
+  },
+  "INFORMATION-TECHNOLOGY": {
+    "label": "INFORMATION-TECHNOLOGY",
+    "description": "Information Technology role typically involves information technology, technology, network, server, hardware. Information technology operations across software, infrastructure, support, and delivery automation.",
+    "required_skills": [
+      "leadership",
+      "communication",
+      "project management",
+      "testing",
+      "sql",
+      "documentation"
+    ],
+    "preferred_skills": [
+      "compliance",
+      "observability",
+      "customer service",
+      "research",
+      "excel",
+      "model evaluation",
+      "sap",
+      "oracle"
+    ]
+  },
+  "PUBLIC-RELATIONS": {
+    "label": "PUBLIC-RELATIONS",
+    "description": "Public Relations role typically involves public relations, public, press, media, relations. Public relations with campaign communication, brand messaging, stakeholder outreach, and event coordination.",
+    "required_skills": [
+      "leadership",
+      "marketing",
+      "communication",
+      "research",
+      "social media",
+      "sales"
+    ],
+    "preferred_skills": [
+      "presentation",
+      "excel",
+      "project management",
+      "customer service",
+      "adobe photoshop",
+      "brand management",
+      "problem solving",
+      "supply chain"
+    ]
+  },
+  "SALES": {
+    "label": "SALES",
+    "description": "Sales role typically involves sales associate, sales, customers, experience sales, store. Sales operations with pipeline management, customer communication, and performance-driven execution.",
+    "required_skills": [
+      "sales",
+      "customer service",
+      "communication",
+      "leadership",
+      "marketing",
+      "excel"
+    ],
+    "preferred_skills": [
+      "problem solving",
+      "presentation",
+      "documentation",
+      "compliance",
+      "contract drafting",
+      "research",
+      "project management",
+      "accounting"
+    ]
+  },
+  "TEACHER": {
+    "label": "TEACHER",
+    "description": "Teacher role typically involves teacher, classroom, students, teaching, learning. Teaching and learning delivery with curriculum execution, communication, and classroom leadership.",
+    "required_skills": [
+      "teaching",
+      "leadership",
+      "communication",
+      "problem solving",
+      "excel"
+    ],
+    "preferred_skills": [
+      "presentation",
+      "customer service",
+      "research",
+      "testing",
+      "sales",
+      "teamwork",
+      "documentation",
+      "compliance"
+    ]
+  }
+}

@@ -1,12 +1,17 @@
 from __future__ import annotations
 
+import logging
 from dataclasses import asdict
+from functools import lru_cache
 from typing import Iterable
 
+import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from ..shared import EvaluationResult, ExperienceFeatures, JobProfile, SkillMatch
+
+logger = logging.getLogger(__name__)
 
 
 def _normalize_label_key(label: str) -> str:
@@ -81,13 +86,13 @@ PROFILE_SEEDS: dict[str, tuple[str, tuple[str, ...], tuple[str, ...]]] = {
     ),
     "DESIGNER": (
         "Design role focused on visual communication, creative iteration, and collaborative project execution.",
-        ("communication", "project management", "stakeholder management", "leadership"),
-        ("react", "javascript", "design", "presentation"),
+        ("graphic design", "communication", "adobe photoshop", "presentation"),
+        ("adobe creative suite", "adobe illustrator", "ui/ux", "figma", "video editing", "marketing"),
     ),
     "DIGITAL-MEDIA": (
         "Digital media role with content strategy, campaign execution, analytics, and channel operations.",
-        ("communication", "project management", "stakeholder management", "dashboarding"),
-        ("javascript", "react", "sql", "analytics"),
+        ("marketing", "communication", "social media", "seo"),
+        ("graphic design", "video editing", "analytics", "dashboarding", "brand management", "presentation"),
     ),
     "ENGINEERING": (
         "Software engineering, APIs, cloud deployment, containers, testing, and scalable backend systems.",
@@ -150,8 +155,44 @@ DEFAULT_JOB_PROFILES: dict[str, JobProfile] = {
 _NORMALIZED_PROFILE_INDEX = {_normalize_label_key(label): profile for label, profile in DEFAULT_JOB_PROFILES.items()}
 
 
+# ---------------------------------------------------------------------------
+# Optional learned-profile registry.
+#
+# When ``register_learned_profiles`` is called, ``get_job_profile`` will
+# prefer the learned profile for a given label and fall back to the
+# hand-curated ``DEFAULT_JOB_PROFILES`` only when no learned profile is
+# available.  Callers (e.g. the evaluation runner) pass
+# ``--learned_profiles_path`` to populate this registry before running.
+# ---------------------------------------------------------------------------
+_LEARNED_PROFILE_INDEX: dict[str, JobProfile] = {}
+
+
+def register_learned_profiles(profiles: dict[str, JobProfile] | None) -> None:
+    """Replace the in-memory learned-profile registry."""
+
+    _LEARNED_PROFILE_INDEX.clear()
+    if not profiles:
+        return
+    for label, profile in profiles.items():
+        _LEARNED_PROFILE_INDEX[_normalize_label_key(label)] = profile
+
+
+def has_learned_profiles() -> bool:
+    return bool(_LEARNED_PROFILE_INDEX)
+
+
 def get_job_profile(label: str) -> JobProfile:
     normalized = _normalize_label_key(label)
+    if normalized in _LEARNED_PROFILE_INDEX:
+        learned = _LEARNED_PROFILE_INDEX[normalized]
+        if learned.label == label:
+            return learned
+        return JobProfile(
+            label=label,
+            description=learned.description,
+            required_skills=learned.required_skills,
+            preferred_skills=learned.preferred_skills,
+        )
     if normalized in _NORMALIZED_PROFILE_INDEX:
         profile = _NORMALIZED_PROFILE_INDEX[normalized]
         if profile.label == label:
@@ -184,6 +225,169 @@ def _text_similarity(candidate_text: str, job_description: str) -> float:
     return float(cosine_similarity(matrix[0], matrix[1])[0, 0])
 
 
+# ---------------------------------------------------------------------------
+# Semantic skill matching.
+#
+# Hand-curated and learned profiles often list a slightly different
+# canonical skill than the candidate has, e.g. profile asks for
+# ``budgeting`` but the candidate has ``financial planning``.  Both are
+# semantically close, share an ontology category, and should count as a
+# (partial) match.  ``soft_skill_overlap`` complements the exact-set
+# intersection used by ``score_candidate`` with a cosine-similarity
+# fallback against the embedded ontology, gated by a threshold to keep
+# noise low.  When the threshold is unmet OR the embeddings backend is
+# unavailable, the fallback degrades gracefully to exact match.
+# ---------------------------------------------------------------------------
+
+
+#: Cosine-similarity threshold above which a non-exact skill is counted
+#: as a "soft" match.  Calibrated against the MiniLM-L6 ontology
+#: embeddings in ``scripts/inspect_cosine_pairs.py``:
+#:
+#: * Same-category pairs cluster in [0.45, 0.65]
+#:   (docker<->k8s=0.64, ML<->DL=0.63, aws<->azure=0.56,
+#:    react<->angular=0.45, adobe-illustrator<->photoshop=0.45).
+#: * Cross-domain pairs cluster in [0.00, 0.16]
+#:   (python<->food safety=0.08, recruiting<->python=0.02).
+#:
+#: A threshold of >1.0 effectively disables soft matching, falling back
+#: to exact set intersection (the ``score`` returned by
+#: ``soft_skill_overlap`` is identical in that regime).  The default is
+#: set high because the threshold sweep in
+#: ``scripts/threshold_sweep.py`` showed soft matching monotonically
+#: hurt agents-only accuracy (0.294 -> 0.235 from threshold 2.0 -> 0.45)
+#: while leaving ensemble accuracy essentially flat (0.682-0.686): the
+#: cosine fallback dilutes argmax discrimination across profiles
+#: without offsetting the loss elsewhere.  Lower this (e.g. to 0.50)
+#: only after a fresh ablation that confirms a robust gain on the
+#: current corpus.
+SOFT_MATCH_THRESHOLD = 1.01
+
+#: Soft matches contribute less than exact ones so the scorer still
+#: rewards crisp ontology hits.  An exact match is worth 1.0; a soft
+#: match scales linearly between this floor (at threshold) and 1.0
+#: (at cosine = 1.0).
+SOFT_MATCH_FLOOR_WEIGHT = 0.5
+
+
+@lru_cache(maxsize=1)
+def _ontology_embedding_table() -> tuple[dict[str, int], np.ndarray] | None:
+    """Return ``({canonical_name: row_index}, embedding_matrix)`` for the
+    process-wide ontology, or None if embeddings cannot be loaded."""
+
+    try:
+        from ..rag.embeddings import get_default_skill_index
+    except Exception as exc:  # pragma: no cover - defensive import guard
+        logger.info("Soft skill matching unavailable (import error): %s", exc)
+        return None
+
+    try:
+        index = get_default_skill_index()
+    except Exception as exc:  # pragma: no cover - encoder may fail on cold start
+        logger.info("Soft skill matching unavailable (encoder error): %s", exc)
+        return None
+
+    matrix = np.asarray(index.matrix, dtype=np.float32)
+    if matrix.size == 0:
+        return None
+
+    # Pre-normalize rows so dot product == cosine similarity.
+    norms = np.linalg.norm(matrix, axis=1, keepdims=True)
+    norms = np.where(norms == 0, 1.0, norms)
+    matrix = matrix / norms
+
+    name_to_row: dict[str, int] = {
+        entry.canonical: i for i, entry in enumerate(index.entries)
+    }
+    return name_to_row, matrix
+
+
+def _soft_match_weight(cosine: float) -> float:
+    """Map a cosine similarity to a contribution weight in [floor, 1]."""
+
+    if cosine >= 1.0:
+        return 1.0
+    if cosine < SOFT_MATCH_THRESHOLD:
+        return 0.0
+    span = max(1e-6, 1.0 - SOFT_MATCH_THRESHOLD)
+    scaled = (cosine - SOFT_MATCH_THRESHOLD) / span
+    return SOFT_MATCH_FLOOR_WEIGHT + (1.0 - SOFT_MATCH_FLOOR_WEIGHT) * scaled
+
+
+def soft_skill_overlap(
+    candidate_skills: set[str],
+    target_skills: set[str],
+    *,
+    threshold: float = SOFT_MATCH_THRESHOLD,
+) -> tuple[float, list[str], dict[str, tuple[str, float]]]:
+    """Compute a fractional overlap between candidate and target skills.
+
+    Returns ``(score, matched_target_skills, mapping)`` where:
+
+    * ``score`` is the soft overlap count (sum of per-target weights), so
+      it is bounded by ``len(target_skills)`` from above.
+    * ``matched_target_skills`` is the sorted subset of targets that were
+      matched (exactly OR soft).  Used downstream for ``matched`` /
+      ``missing`` reporting.
+    * ``mapping`` maps each matched target -> (matched_candidate_skill,
+      cosine_similarity).  Exact matches map to themselves with
+      similarity 1.0.
+
+    The function falls back to plain set intersection when the embedding
+    matrix is unavailable, in which case only exact matches are counted.
+    """
+
+    if not candidate_skills or not target_skills:
+        return 0.0, [], {}
+
+    table = _ontology_embedding_table()
+    matched: list[str] = []
+    mapping: dict[str, tuple[str, float]] = {}
+    score = 0.0
+
+    if table is None:
+        # No embeddings available: degrade to exact match.
+        for target in target_skills:
+            if target in candidate_skills:
+                matched.append(target)
+                mapping[target] = (target, 1.0)
+                score += 1.0
+        return score, sorted(matched), mapping
+
+    name_to_row, matrix = table
+    candidate_list = list(candidate_skills)
+    candidate_indices = [name_to_row[c] for c in candidate_list if c in name_to_row]
+    candidate_known = [c for c in candidate_list if c in name_to_row]
+
+    candidate_matrix = matrix[candidate_indices] if candidate_indices else None
+
+    for target in target_skills:
+        if target in candidate_skills:
+            matched.append(target)
+            mapping[target] = (target, 1.0)
+            score += 1.0
+            continue
+        target_idx = name_to_row.get(target)
+        if target_idx is None or candidate_matrix is None:
+            continue
+        target_vec = matrix[target_idx]
+        sims = candidate_matrix @ target_vec  # shape (n_known_candidates,)
+        if sims.size == 0:
+            continue
+        best_local = int(np.argmax(sims))
+        best_sim = float(sims[best_local])
+        if best_sim < threshold:
+            continue
+        weight = _soft_match_weight(best_sim)
+        if weight == 0.0:
+            continue
+        matched.append(target)
+        mapping[target] = (candidate_known[best_local], best_sim)
+        score += weight
+
+    return score, sorted(matched), mapping
+
+
 def score_candidate(
     normalized_skills: Iterable[SkillMatch],
     experience: ExperienceFeatures,
@@ -194,14 +398,29 @@ def score_candidate(
     required = set(job_profile.required_skills)
     preferred = set(job_profile.preferred_skills)
 
-    required_overlap = len(candidate_skill_names & required)
-    preferred_overlap = len(candidate_skill_names & preferred)
-    required_score = required_overlap / max(1, len(required))
-    preferred_score = preferred_overlap / max(1, len(preferred))
-    coverage_score = len(candidate_skill_names & (required | preferred)) / max(1, len(candidate_skill_names))
+    # Soft (cosine-similarity) overlap.  Falls back to exact-set
+    # intersection when ontology embeddings are unavailable.
+    required_soft, matched_required, _ = soft_skill_overlap(candidate_skill_names, required)
+    preferred_soft, matched_preferred, _ = soft_skill_overlap(candidate_skill_names, preferred)
+    union_soft, matched_union, _ = soft_skill_overlap(
+        candidate_skill_names, required | preferred
+    )
+
+    required_score = required_soft / max(1, len(required))
+    preferred_score = preferred_soft / max(1, len(preferred))
+    # Coverage can exceed 1.0 under soft matching because a single
+    # candidate skill may soft-hit several targets (e.g. "adobe
+    # illustrator" -> {illustrator, photoshop, graphic design}).  Cap to
+    # preserve the original [0, 1] contract that the fit-score formula
+    # assumes.
+    coverage_score = min(1.0, union_soft / max(1, len(candidate_skill_names)))
     years_score = min(experience.total_years / 8.0, 1.0)
     leadership_score = min(experience.leadership_indicators / 2.0, 1.0)
     text_score = _text_similarity(candidate_text, job_profile.description)
+    # ``general_overlap`` keeps the original Jaccard formulation (counts
+    # only exact set intersection) for backwards-comparable component
+    # reporting; the headline match-quality signals above already use the
+    # softer cosine matching.
     general_overlap = _jaccard(candidate_skill_names, required | preferred)
 
     component_scores = {
@@ -225,8 +444,8 @@ def score_candidate(
     )
     fit_score = round(max(0.0, min(100.0, fit_score)), 2)
 
-    matched = tuple(sorted(candidate_skill_names & (required | preferred)))
-    missing = tuple(sorted((required | preferred) - candidate_skill_names))
+    matched = tuple(sorted(set(matched_union)))
+    missing = tuple(sorted((required | preferred) - set(matched_union)))
     return fit_score, component_scores, matched, missing
 
 

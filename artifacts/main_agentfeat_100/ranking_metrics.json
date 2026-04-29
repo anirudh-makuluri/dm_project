@@ -1,0 +1,696 @@
+{
+  "macro_per_k": {
+    "1": {
+      "k": 1,
+      "precision": 0.2273,
+      "recall": 0.0402,
+      "map": 0.2273,
+      "ndcg": 0.2273
+    },
+    "3": {
+      "k": 3,
+      "precision": 0.1667,
+      "recall": 0.0978,
+      "map": 0.1313,
+      "ndcg": 0.1795
+    },
+    "5": {
+      "k": 5,
+      "precision": 0.1273,
+      "recall": 0.1251,
+      "map": 0.0967,
+      "ndcg": 0.1557
+    },
+    "10": {
+      "k": 10,
+      "precision": 0.1,
+      "recall": 0.2139,
+      "map": 0.1012,
+      "ndcg": 0.1838
+    }
+  },
+  "per_job": {
+    "ACCOUNTANT": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "ADVOCATE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.2,
+        "map": 0.04,
+        "ndcg": 0.1312
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.2,
+        "map": 0.04,
+        "ndcg": 0.1312
+      }
+    },
+    "AGRICULTURE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "APPAREL": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "ARTS": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "AUTOMOBILE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.5,
+        "map": 0.1667,
+        "ndcg": 0.3066
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.5,
+        "map": 0.1667,
+        "ndcg": 0.3066
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.5,
+        "map": 0.1667,
+        "ndcg": 0.3066
+      }
+    },
+    "BANKING": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.25,
+        "map": 0.1111,
+        "ndcg": 0.2346
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.25,
+        "map": 0.0833,
+        "ndcg": 0.1952
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.5,
+        "map": 0.1389,
+        "ndcg": 0.3127
+      }
+    },
+    "BUSINESS-DEVELOPMENT": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "CHEF": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "CONSTRUCTION": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.125,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.6667,
+        "recall": 0.25,
+        "map": 0.6667,
+        "ndcg": 0.7654
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.4,
+        "recall": 0.25,
+        "map": 0.4,
+        "ndcg": 0.5531
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.25,
+        "map": 0.25,
+        "ndcg": 0.4125
+      }
+    },
+    "CONSULTANT": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "DESIGNER": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.1429,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.6667,
+        "recall": 0.2857,
+        "map": 0.5556,
+        "ndcg": 0.7039
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.4,
+        "recall": 0.2857,
+        "map": 0.3333,
+        "ndcg": 0.5087
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.4,
+        "recall": 0.5714,
+        "map": 0.3912,
+        "ndcg": 0.6019
+      }
+    },
+    "DIGITAL-MEDIA": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.1667,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.1667,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.1667,
+        "map": 0.2,
+        "ndcg": 0.3392
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.1667,
+        "map": 0.1667,
+        "ndcg": 0.3026
+      }
+    },
+    "ENGINEERING": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.6667,
+        "recall": 0.25,
+        "map": 0.3889,
+        "ndcg": 0.5307
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.4,
+        "recall": 0.25,
+        "map": 0.2333,
+        "ndcg": 0.3836
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.25,
+        "map": 0.1458,
+        "ndcg": 0.2861
+      }
+    },
+    "FINANCE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "FITNESS": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.3333,
+        "map": 0.0333,
+        "ndcg": 0.1357
+      }
+    },
+    "HEALTHCARE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.3333,
+        "map": 0.0694,
+        "ndcg": 0.2032
+      }
+    },
+    "HR": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.25,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.25,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.25,
+        "map": 0.25,
+        "ndcg": 0.3904
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.5,
+        "map": 0.3333,
+        "ndcg": 0.5294
+      }
+    },
+    "INFORMATION-TECHNOLOGY": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.2,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.2,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.6,
+        "recall": 0.6,
+        "map": 0.42,
+        "ndcg": 0.6164
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.3,
+        "recall": 0.6,
+        "map": 0.42,
+        "ndcg": 0.6164
+      }
+    },
+    "PUBLIC-RELATIONS": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "SALES": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "TEACHER": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.5,
+        "map": 0.0714,
+        "ndcg": 0.2044
+      }
+    }
+  },
+  "n_jobs": 22,
+  "n_candidates": 100
+}

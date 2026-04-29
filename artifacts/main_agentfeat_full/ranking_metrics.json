@@ -1,0 +1,756 @@
+{
+  "macro_per_k": {
+    "1": {
+      "k": 1,
+      "precision": 0.2917,
+      "recall": 0.0131,
+      "map": 0.2917,
+      "ndcg": 0.2917
+    },
+    "3": {
+      "k": 3,
+      "precision": 0.1528,
+      "recall": 0.0204,
+      "map": 0.1435,
+      "ndcg": 0.1811
+    },
+    "5": {
+      "k": 5,
+      "precision": 0.15,
+      "recall": 0.0338,
+      "map": 0.1124,
+      "ndcg": 0.1716
+    },
+    "10": {
+      "k": 10,
+      "precision": 0.1375,
+      "recall": 0.066,
+      "map": 0.0795,
+      "ndcg": 0.1568
+    }
+  },
+  "per_job": {
+    "ACCOUNTANT": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0417,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.0417,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.0417,
+        "map": 0.2,
+        "ndcg": 0.3392
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.0833,
+        "map": 0.1222,
+        "ndcg": 0.2863
+      }
+    },
+    "ADVOCATE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.0417,
+        "map": 0.05,
+        "ndcg": 0.1461
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.0833,
+        "map": 0.0536,
+        "ndcg": 0.1682
+      }
+    },
+    "AGRICULTURE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "APPAREL": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "ARTS": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.0476,
+        "map": 0.0125,
+        "ndcg": 0.0694
+      }
+    },
+    "AUTOMOBILE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.1429,
+        "map": 0.0238,
+        "ndcg": 0.0979
+      }
+    },
+    "AVIATION": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.0417,
+        "map": 0.0167,
+        "ndcg": 0.0784
+      }
+    },
+    "BANKING": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.0435,
+        "map": 0.0111,
+        "ndcg": 0.0663
+      }
+    },
+    "BPO": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "BUSINESS-DEVELOPMENT": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "CHEF": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "CONSTRUCTION": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.0455,
+        "map": 0.1111,
+        "ndcg": 0.2346
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.0455,
+        "map": 0.0667,
+        "ndcg": 0.1696
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.2,
+        "recall": 0.0909,
+        "map": 0.0667,
+        "ndcg": 0.1884
+      }
+    },
+    "CONSULTANT": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "DESIGNER": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0476,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.0476,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.4,
+        "recall": 0.0952,
+        "map": 0.28,
+        "ndcg": 0.4704
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.4,
+        "recall": 0.1905,
+        "map": 0.2344,
+        "ndcg": 0.4499
+      }
+    },
+    "DIGITAL-MEDIA": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0526,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.0526,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.6,
+        "recall": 0.1579,
+        "map": 0.42,
+        "ndcg": 0.6164
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.4,
+        "recall": 0.2105,
+        "map": 0.2671,
+        "ndcg": 0.4734
+      }
+    },
+    "ENGINEERING": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.4,
+        "recall": 0.0833,
+        "map": 0.13,
+        "ndcg": 0.2773
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.3,
+        "recall": 0.125,
+        "map": 0.1079,
+        "ndcg": 0.2533
+      }
+    },
+    "FINANCE": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0417,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.0417,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.0417,
+        "map": 0.2,
+        "ndcg": 0.3392
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.0417,
+        "map": 0.1,
+        "ndcg": 0.2201
+      }
+    },
+    "FITNESS": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "HEALTHCARE": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "HR": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0455,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.6667,
+        "recall": 0.0909,
+        "map": 0.6667,
+        "ndcg": 0.7654
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.6,
+        "recall": 0.1364,
+        "map": 0.55,
+        "ndcg": 0.6992
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.6,
+        "recall": 0.2727,
+        "map": 0.4477,
+        "ndcg": 0.657
+      }
+    },
+    "INFORMATION-TECHNOLOGY": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0417,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 1.0,
+        "recall": 0.125,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.6,
+        "recall": 0.125,
+        "map": 0.6,
+        "ndcg": 0.7227
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.4,
+        "recall": 0.1667,
+        "map": 0.3444,
+        "ndcg": 0.5353
+      }
+    },
+    "PUBLIC-RELATIONS": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    "SALES": {
+      "1": {
+        "k": 1,
+        "precision": 1.0,
+        "recall": 0.0435,
+        "map": 1.0,
+        "ndcg": 1.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.3333,
+        "recall": 0.0435,
+        "map": 0.3333,
+        "ndcg": 0.4693
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.2,
+        "recall": 0.0435,
+        "map": 0.2,
+        "ndcg": 0.3392
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.1,
+        "recall": 0.0435,
+        "map": 0.1,
+        "ndcg": 0.2201
+      }
+    },
+    "TEACHER": {
+      "1": {
+        "k": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "3": {
+        "k": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "5": {
+        "k": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      },
+      "10": {
+        "k": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "map": 0.0,
+        "ndcg": 0.0
+      }
+    }
+  },
+  "n_jobs": 24,
+  "n_candidates": 497
+}

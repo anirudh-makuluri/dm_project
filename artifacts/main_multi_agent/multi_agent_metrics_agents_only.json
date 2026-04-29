@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "accuracy": 0.2495,
+    "precision_macro": 0.3594,
+    "recall_macro": 0.2407,
+    "f1_macro": 0.2435,
+    "f1_weighted": 0.2611,
+    "support": 497
+  },
+  "baseline_metrics": {
+    "accuracy": 0.6398,
+    "precision_macro": 0.6536,
+    "recall_macro": 0.6064,
+    "f1_macro": 0.6115,
+    "f1_weighted": 0.6373,
+    "support": 497
+  },
+  "comparison": {
+    "accuracy_delta": -0.3903,
+    "precision_macro_delta": -0.2942,
+    "recall_macro_delta": -0.3657,
+    "f1_macro_delta": -0.368,
+    "f1_weighted_delta": -0.3762
+  },
+  "fairness": {
+    "mean_score_difference": -0.0012,
+    "selection_rate_difference": 0.0,
+    "bootstrap_ci_low": -0.0015,
+    "bootstrap_ci_high": -0.0009,
+    "original_mean": 26.1338,
+    "perturbed_mean": 26.1326,
+    "selection_threshold": 60.0,
+    "variant_count": 497
+  },
+  "providers": {
+    "llm_backend": "rule_based",
+    "llm_model": "deterministic-fallback",
+    "embedding_backend": "sentence_transformer"
+  }
+}

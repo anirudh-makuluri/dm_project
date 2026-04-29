@@ -1,0 +1,42 @@
+{
+  "metrics": {
+    "accuracy": 0.2877,
+    "precision_macro": 0.2748,
+    "recall_macro": 0.2542,
+    "f1_macro": 0.2337,
+    "f1_weighted": 0.2655,
+    "support": 497
+  },
+  "baseline_metrics": {
+    "accuracy": 0.6398,
+    "precision_macro": 0.6536,
+    "recall_macro": 0.6064,
+    "f1_macro": 0.6115,
+    "f1_weighted": 0.6373,
+    "support": 497
+  },
+  "comparison": {
+    "accuracy_delta": -0.3521,
+    "precision_macro_delta": -0.3788,
+    "recall_macro_delta": -0.3522,
+    "f1_macro_delta": -0.3778,
+    "f1_weighted_delta": -0.3718
+  },
+  "fairness": {
+    "mean_score_difference": 1.2675,
+    "selection_rate_difference": 0.0,
+    "bootstrap_ci_low": 0.3493,
+    "bootstrap_ci_high": 2.175,
+    "original_mean": 35.6021,
+    "perturbed_mean": 36.8696,
+    "selection_threshold": 60.0,
+    "variant_count": 497
+  },
+  "providers": {
+    "llm_backend": "openai_compatible",
+    "llm_model": "llama-3.2-3b-instruct",
+    "embedding_backend": "sentence_transformer",
+    "profile_source": "learned",
+    "uses_agent_features": false
+  }
+}
